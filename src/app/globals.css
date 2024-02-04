@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  --logo-color: #FFF;
+}
+
+/* <div className="w-[30px] h-[30px] bg-black" style={{ mask: "radial-gradient(7px, #0000 100%, #000)" }}></div> */
+
+.logo-xs {
+  width: 15px;
+  height: 15px;
+  background: var(--logo-color);
+  mask: radial-gradient(6px, #0000 85%, #000);
+}
+
+.logo-sm {
+  width: 20px;
+  height: 20px;
+  background: var(--logo-color);
+  mask: radial-gradient(8px, #0000 85%, #000);
+}
+
+.logo-md {
+  width: 30px;
+  height: 30px;
+  background: var(--logo-color);
+  mask: radial-gradient(12px, #0000 90%, #000);
+}
+
+.logo-lg {
+  width: 40px;
+  height: 40px;
+  background: var(--logo-color);
+  mask: radial-gradient(16px, #0000 90%, #000);
+}
+
+.logo-xl {
+  width: 50px;
+  height: 50px;
+  background: var(--logo-color);
+  mask: radial-gradient(20px, #0000 90%, #000);
+}
