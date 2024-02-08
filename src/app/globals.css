@@ -26,7 +26,17 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+body {
+  min-height: 100vh;
+}
 
+.min-body-height {
+  min-height: calc(100vh - 65px);
+}
+
+.max-body-height {
+  max-height: calc(100vh - 65px);
+}
 
 @layer utilities {
   .text-balance {
