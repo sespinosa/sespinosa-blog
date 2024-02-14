@@ -1,0 +1,11 @@
+# grok-wasm-core
+
+This experiment aims to implement a wasm-core module that allows to run grok in the browser, using the [rust grok library](https://crates.io/crates/grok/versions) as a dependency.
+
+## What's WASM Core?
+
+WebAssembly Core refers to libraries compiled to WebAssembly that export functions (bare bones) that just support the basic primitives, more info [here](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts#webassembly_key_concepts).
+
+## Motivation
+
+The idea behind this experiment is to run grok in the browser, probably this will lead to a `WASI` implementation of the same funciontality (but not as a module and more like a POSIX binary that you can pipe a stream into it).
