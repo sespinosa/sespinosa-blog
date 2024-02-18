@@ -1,0 +1,11 @@
+import ReverseWASIRunner from './components/ReverseWASIRunner';
+
+# reverse-wasi
+
+This experiment aims to implement a simple `POSIX` application compiled to`wasm32-wasi` in the browser, the application repo can be found [here](https://github.com/sespinosa/reverse).
+
+The functionality is very simple, you pass a string via `stdin` and you get the string reversed in `stdout` the point of doing this is to test the **backpressure** and **streaming** capabilities of **wasm**.
+
+## Work in progress
+
+<ReverseWASIRunner />

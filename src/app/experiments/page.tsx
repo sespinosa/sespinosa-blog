@@ -11,8 +11,8 @@ const Experiments = () => {
           </Link>
         </li>
         <li>
-          <Link href="/experiments/grok-wasm-core" color="foreground">
-            grok-wasm-core
+          <Link href="/experiments/reverse-wasi" color="foreground">
+            reverse wasi
           </Link>
         </li>
       </ul>
