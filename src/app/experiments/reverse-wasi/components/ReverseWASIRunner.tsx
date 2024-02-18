@@ -12,10 +12,14 @@ const getWASIWorker = async (url: string, name: string) => {
       sterr: (err: string) => console.error("stderr: ", err),
     });
     console.log("Instance created, trying to start....")
+    if(window) {
+      // @ts-ignore
+      window.wasiWorker = wasiWorker
+      // @ts-ignore
+      window.WASIWorkerHost = WASIWorkerHost;
+    };
     const result = await wasiWorker.start();
     console.log("Wasi Worker Result: ", result);
-    // @ts-ignore
-    if(window) window.wasiWorker = wasiWorker;
     return wasiWorker;
   }
   catch(e) {
